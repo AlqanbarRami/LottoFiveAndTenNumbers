@@ -1,0 +1,199 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#container{
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:100vh;
+    padding: 30px;
+}
+
+#mySelect{
+    height: 44px;
+    border: none;
+    overflow:hidden;
+    background-color: blanchedalmond;
+  }
+
+  #mySelect::-moz-focus-inner {
+    border: 0;
+    
+   
+  }
+  #mySelect:focus {
+    outline: none;
+    
+  }
+
+  
+  #mySelect option{
+    margin-left: 5px;
+    width: auto;
+    font-size: 1.5em;
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+  #divForNumbers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    width: 40%;
+  }
+
+  #divForNumbers input[type="checkbox"] {
+    display: none;
+  }
+  
+  #divForNumbers span {
+    display: inline-block;
+    width: 20px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 3px;
+    color: black;
+    margin: 5px;
+  
+  }
+  
+  #divForNumbers input[type="checkbox"]:checked + span  {
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.2em;
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    color: black;
+    
+  }
+
+  
+
+
+@keyframes example {
+   10% {background-color: lightsteelblue;}
+   25% {background-color:thistle;}
+   35% {background-color:white;}
+   45% {background-color:aquamarine;}
+   55% {background-color:cadetblue;}
+   65% {background-color:cornflowerblue;}
+   75% {background-color:beige;}
+   100% {background-color:burlywood;}
+
+ 
+}
+
+#pForNumbers{
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+  #lableFornumbers{
+      padding: 10px;
+  }
+
+
+  #getNumber{
+      padding: 10px 30px 10px 30px;
+      border-radius: 5%;
+      cursor: pointer;
+      border-style: none;
+      color: black;
+      font-size: 1.2em;
+      margin-top: 5px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+  #getNumber:hover{
+      transform: scale(1.2);
+  }
+
+
+  @media screen and (max-width: 900px) {
+
+    #divForNumbers{
+    
+        width: 80%;
+      }
+    
+      #divForNumbers input[type="checkbox"] {
+        display: none;
+      }
+      
+      #divForNumbers span {
+        display: inline-block;
+        padding: 5px;
+        width: 20px;
+        text-align: center;
+        border: 1px solid black;
+        font-size: x-small;
+        border-radius: 3px;
+        color: black;
+      }
+      
+      #divForNumbers input[type="checkbox"]:checked + span {
+        background-color: lightsteelblue;
+        color: black;
+        font-size: 12px;
+        border-radius: 50%;
+      }
+    
+      #lableFornumbers{
+          padding: 10px;
+      }
+    
+
+      #getNumber{
+        padding: 5px 10px 5px 10px;
+        border-radius: 5%;
+        cursor: pointer;
+        border-style: none;
+        color: black;
+        font-size: 1.1em;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+    #getNumber:hover{
+        transform: none;
+    }
+    
+    #mySelect option{
+        margin-left: 5px;
+        width: auto;
+        font-size: 1.1em;
+        padding: 3px 10px 3px 10px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 5px;
+        color: black;
+        background-color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+
+    #pForNumbers{
+        background-color: white;
+        padding: 10px;
+        border-radius: 30px;
+    }
+
+  }
